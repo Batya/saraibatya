@@ -1,13 +1,13 @@
 $(window).scroll(function() {
     var winHeight = $(window).scrollTop(),
-        headerHeight = 130,
-        menuIcon = $(".menu"),
-        menuBar = $(".menuBar");
-    if(winHeight >= headerHeight){
-        menuIcon.css({color: 'lightgray'});
-        menuBar.show();
+        menuBar = $("nav.main-header-nav");
+    if(winHeight > 0){
+        menuBar.css({'background-color':'#6ECFEE'});
     }else{
-        menuIcon.css({color: 'white'});
-        menuBar.fadeOut(200);
+        menuBar.css({'background-color':'transparent'});
     }
+});
+
+$(function() {
+    $('.parallax').parallax();
 });

@@ -2,11 +2,10 @@ var __El = (function($) {
     var getUrl = location.href;
     var urlArr = getUrl.split('.com/');
     var returnUrl = urlArr[0] + '.com/';
-    var urlParams = getUrl[1];
     var el = {
         //URL PARAMETERS
         url: returnUrl,
-        urlParams: urlArr[1].split('/'),
+        urlParams: (location.hash).replace('#','').split('/'),
         api: returnUrl + 'api/',
 
         modal: function(opt, callback) {
