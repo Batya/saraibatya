@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<url>
+		<live><![CDATA[http://wmscogla.org]]></live>
+		<local><![CDATA[http://wmscogla.dev]]></local>
+	</url>
+	<core>
+		<timezone><![CDATA[America/Los_Angeles]]></timezone>
+	</core>
+	<dblive>
+		<host>localhost</host>
+		<name>wmscogla</name>
+		<user>144kAdmin</user>
+		<pass></pass>
+	</dblive>
+	<dblocal>
+		<host>localhost</host>
+		<name>wmscogla</name>
+		<user>root</user>
+		<pass>root</pass>
+	</dblocal>
+	<route>
+		<core>
+			<controllers><![CDATA[app/modules/default/controllers/]]></controllers>
+			<models><![CDATA[app/modules/default/models/]]></models>
+			<views><![CDATA[app/modules/default/views/]]></views>
+		</core>
+		<api>
+			<controllers><![CDATA[app/modules/API/controllers/]]></controllers>
+			<models><![CDATA[app/modules/API/models/]]></models>
+		</api>
+	</route>
+</config>

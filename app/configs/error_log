@@ -1,0 +1,2 @@
+[03-Mar-2015 17:41:22 UTC] PHP Notice:  Undefined index: login_time in /home/ggomez144/public_html/app/configs/session.php on line 5
+[03-Mar-2015 19:07:16 UTC] PHP Notice:  Undefined index: login_time in /home/ggomez144/public_html/app/configs/session.php on line 5

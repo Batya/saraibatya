@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="card col m6 offset-m3 s12" style="padding-bottom: 20px;">
+            <div class="card-content">
+                <span class="card-title">Log In</span>
+                <form class="col s12" id="loginForm" onsubmit="login.submitLogin(event,this);" action="<?php echo URL; ?>login/login" method="post">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_user" type="text" name="username" class="validate">
+                            <label for="icon_user">Username</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">vpn_key</i>
+                            <input id="icon_key" type="password" name="password" class="validate">
+                            <label for="icon_key">Password</label>
+                        </div>
+                    </div>
+                    <button class="btn btn-flat white waves-red waves-effect" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php $this->loadJS('login_login') ?>

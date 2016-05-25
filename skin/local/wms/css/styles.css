@@ -1,0 +1,204 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eee;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main.content {
+    flex: 1 0 auto;
+}
+
+.pointer {
+    cursor: pointer;
+}
+.move {
+    cursor: move;
+}
+header.main-header {
+    width: 100%;
+    height: 200px;
+    background: url(images/dpm_background.jpg) center/cover no-repeat;
+}
+header.main-header .menuBar {
+    display: none;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    z-index: 10;
+}
+header.main-header .menu {
+    position: fixed;
+    top: 0;
+    z-index: 15;
+    color: white;
+}
+header.main-header .menu i {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+header.main-header .menu.menu-left {
+    left: 0;
+}
+header.main-header .menu.menu-left .page-title {
+    position: absolute;
+    top: 13px;
+    left: 60px;
+}
+header.main-header .menu.menu-left .page-title a {
+    color: white;
+}
+header.main-header .menu.menu-right {
+    right: 10px;
+    top: 5px;
+}
+main.content > .container {
+    margin-top: -40px;
+}
+
+.container {
+    background-color: rgba(0,0,0,0);
+}
+footer.page-footer {
+    background-color: #222222;
+    padding-top: 0;
+}
+footer.page-footer .footer-copyright {
+    background-color: rgba(0,0,0,0.3);
+}
+/* main.content > .container {
+    margin-top: -50px;
+}
+
+.container {
+    background-color: rgba(0,0,0,0);
+} */
+.nav-toggle-image {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 19;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+footer.page-footer {
+    background-color: #222222;
+}
+footer.page-footer .footer-copyright {
+    background-color: rgba(0,0,0,0.3);
+}
+/* main.content > .container {
+    margin-top: -50px;
+}
+
+.container {
+    background-color: rgba(0,0,0,0);
+} */
+nav {
+    background-color: transparent;
+    height: 0;
+}
+nav i.material-icons {
+    display: initial;
+}
+nav a.button-collapse-left {
+    position: fixed;
+    top: -5px;
+    left: 20px;
+    z-index: 19;
+    height: 0;
+}
+nav .dpm-nav-group-title {
+    color: #333333;
+    padding: 20px 0 10px 20px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav .r-nav-header {
+    display: block;
+    background-color: #ffffff;
+    height: 300px;
+}
+nav li.group-title {
+    color: #000;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+/* main.content > .container {
+    margin-top: -50px;
+}
+
+.container {
+    background-color: rgba(0,0,0,0);
+} */
+
+
+
+
+/* OVERRIDE */
+
+.input-field .prefix.active {
+    color: #cc0000;
+}
+
+.btn:hover, .btn-large:hover {
+    background-color: #cc0000;
+}
+
+.btn-flat:hover {
+    background-color: transparent;
+}
+
+input:not([type]):focus:not([readonly])+label, input[type=text]:focus:not([readonly])+label, input[type=password]:focus:not([readonly])+label, input[type=email]:focus:not([readonly])+label, input[type=url]:focus:not([readonly])+label, input[type=time]:focus:not([readonly])+label, input[type=date]:focus:not([readonly])+label, input[type=datetime]:focus:not([readonly])+label, input[type=datetime-local]:focus:not([readonly])+label, input[type=tel]:focus:not([readonly])+label, input[type=number]:focus:not([readonly])+label, input[type=search]:focus:not([readonly])+label, textarea.materialize-textarea:focus:not([readonly])+label {
+    color: #cc0000;
+}
+
+.collection {
+    margin: 0.5rem 0 1rem 0;
+    border: 0;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+}
+.collection a.collection-item {
+    display: block;
+    transition: .25s;
+    color: #cc0000;
+}
+.secondary-content {
+    float: right;
+    color: #cc0000;
+}
+
+[type="checkbox"]:checked+label:before {
+    top: -4px;
+    left: -5px;
+    width: 12px;
+    height: 22px;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid #cc0000;
+    border-bottom: 2px solid #cc0000;
+    -webkit-transform: rotate(40deg);
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid #cc0000;
+    box-shadow: 0 1px 0 0 #cc0000;
+}

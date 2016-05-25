@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+    <?php $this->__require(LAYOUTS.THEME.DS,'index/head.html') ?>
+    <body>
+        <?php $this->__require(LAYOUTS.THEME.DS,'index/scripts.html') ?>
+        <main class="content">
+            <?php $this->__require(LAYOUTS.THEME.DS,'index/header.phtml') ?>
+            <div><?php require $this->getViewHtml($this->layout) ?></div>
+        </main>
+        <?php $this->__require(LAYOUTS.THEME.DS,'index/footer.phtml') ?>
+    </body>
+</html>
