@@ -5,10 +5,10 @@
  */
 class AboutController extends SEVEN_THUNDERS
 {
-	public funciton __construct()
+	public function __construct()
 	{
 		parent::__construct();
-		$this->loadModel('about');
+		$this->loadModel('about_about');
 	}
 
 	public function indexAction()
