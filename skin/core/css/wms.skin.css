@@ -3,7 +3,7 @@ body {
   min-height: 100vh;
   flex-direction: column; }
 
-main {
+main#main-body-container {
   flex: 1 0 auto; }
 
 nav.main-header-nav {
@@ -13,5 +13,16 @@ nav.main-header-nav {
   box-shadow: none;
   transition: background-color 300ms ease-in-out;
   z-index: 1000; }
+
+.container.section-200 {
+  height: 200px; }
+.container.section-300 {
+  height: 300px; }
+.container.section-400 {
+  height: 400px; }
+.container.section-500 {
+  height: 500px; }
+.container.section-600 {
+  height: 600px; }
 
 /*# sourceMappingURL=wms.skin.css.map */

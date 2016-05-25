@@ -36,7 +36,7 @@ class SEVEN_THUNDERS extends Database
 	public function htmlBlock($view)
 	{
 		$view = explode("_",$view);
-		$page = $view[0].DS.'views'.DS.'blocks'.DS.$view[1].".phtml";
+		$page = $view[0].DS.'Blocks'.DS.$view[1].".phtml";
 		$this->__require(MODULES,$page);
 	}
 	
@@ -70,12 +70,12 @@ class SEVEN_THUNDERS extends Database
 	public function loadJS($module)
 	{
 		$module = explode("_",$module);
-		echo '<script src="'.URL.'app/modules/dpm/'.$module[0].'/js/'.$module[1].'.js"></script>';
+		echo '<script src="'.URL.'app/modules/'.THEME.'/'.$module[0].'/js/'.$module[1].'.js"></script>';
 	}
 	public function loadCSS($module)
 	{
 		$module = explode("_",$module);
-		echo '<link href="'. URL.'app/modules/dpm/'.$module[0].'/css/'.$module[1].'.css" />';
+		echo '<link href="'. URL.'app/modules/'.THEME.'/'.$module[0].'/css/'.$module[1].'.css" />';
 	}
 	
 	/**

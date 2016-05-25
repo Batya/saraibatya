@@ -7,7 +7,3 @@ $(window).scroll(function() {
         menuBar.css({'background-color':'transparent'});
     }
 });
-
-$(function() {
-    $('.parallax').parallax();
-});

@@ -46,6 +46,9 @@ define("URL", $url);
 ## PROPER LIVE HOME URL
 define("LIVE_URL", $con->url->live);
 
+## PROPER LOCAL HOME URL
+define("LOCAL_URL", $con->url->local);
+
 
 ## CONSTANTS USED IN SITE
 
