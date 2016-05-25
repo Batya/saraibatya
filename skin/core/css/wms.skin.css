@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+nav.main-header-nav {
+  position: fixed;
+  padding: 0 20px;
+  background-color: transparent;
+  box-shadow: none;
+  transition: background-color 300ms ease-in-out;
+  z-index: 1000; }
+
+/*# sourceMappingURL=wms.skin.css.map */

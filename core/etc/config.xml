@@ -20,14 +20,17 @@
 		<pass>root</pass>
 	</dblocal>
 	<route>
-		<core>
-			<controllers><![CDATA[app/modules/default/controllers/]]></controllers>
-			<models><![CDATA[app/modules/default/models/]]></models>
-			<views><![CDATA[app/modules/default/views/]]></views>
-		</core>
-		<api>
-			<controllers><![CDATA[app/modules/API/controllers/]]></controllers>
-			<models><![CDATA[app/modules/API/models/]]></models>
-		</api>
+		<wms>
+			<modules><![CDATA[app/modules/wms/]]></modules>
+			<controllers><![CDATA[app/modules/wms/controllers/]]></controllers>
+			<models><![CDATA[app/modules/wms/models/]]></models>
+			<views><![CDATA[app/modules/wms/views/]]></views>
+			<js><![CDATA[app/modules/wms/js/]]></js>
+			<api>
+				<module><![CDATA[app/module/wms/api/]]></module>
+				<controllers><![CDATA[app/modules/wms/api/controllers/]]></controllers>
+				<models><![CDATA[app/modules/wms/api/models/]]></models>
+			</api>
+		</wms>
 	</route>
 </config>

@@ -50,13 +50,7 @@ define("LIVE_URL", $con->url->live);
 ## CONSTANTS USED IN SITE
 
 define('THEME', 'wms');
-// define('THEME', 'ngDPM');
 define('LAYOUTS', PUBLIC_INDEX.DS.'layouts'.DS);
-
-//PUBLIC WEBSITE
-// define('CORE_CTRL', $con->route->core->controllers);
-// define('CORE_MOD', $con->route->core->models);
-// define('CORE_VIEW', $con->route->core->views);
 
 //WMS
 define('MODULES', APP_ROOT.DS.'modules'.DS.THEME.DS);
@@ -65,10 +59,11 @@ define('MODELS','Models'.DS);
 define('VIEWS','views'.DS);
 define('JS','js'.DS);
 
+
 //API
-define('API_CTRL', $con->route->api->controllers);
-define('API_MOD', $con->route->api->models);
-define('API_VIEW', $con->route->api->views);
+define('API_MODULE', $con->route->wms->api->module);
+define('API_CTRL', $con->route->wms->api->controllers);
+define('API_MOD', $con->route->wms->api->models);
 
 
 
