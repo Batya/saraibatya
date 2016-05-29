@@ -11,8 +11,18 @@ nav.main-header-nav {
   padding: 0 20px;
   background-color: transparent;
   box-shadow: none;
-  transition: background-color 300ms ease-in-out;
-  z-index: 1000; }
+  z-index: 1000;
+  -moz-transition: background-color 300ms ease-in-out;
+  -o-transition: background-color 300ms ease-in-out;
+  -webkit-transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out; }
+  nav.main-header-nav.show-nav {
+    background-color: #6ECFEE; }
+    nav.main-header-nav.show-nav a {
+      color: #FFFFFF; }
+  nav.main-header-nav ul li a {
+    font-weight: 700;
+    color: #AAAAAA; }
 
 .container.section-200 {
   height: 200px; }

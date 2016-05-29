@@ -1,0 +1,5 @@
+
+How to watch a .scss file with SASS to ouput .css
+
+$ sass --watch sass/wms.skin.scss:wms.skin.css
+>>> Sass is watching for changes. Press Ctrl-C to stop.
