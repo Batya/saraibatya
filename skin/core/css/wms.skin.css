@@ -36,9 +36,9 @@ main#main-body-container {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #6ECFEE; }
+    /*background-color: $lightblue;*/ }
     .main-header nav.main-header-nav.show-nav ul li a {
-      color: #FFFFFF; }
+      /*color: $white;*/ }
     .main-header nav.main-header-nav.show-nav ul#activities-dropdown li a {
       color: #6ECFEE; }
     .main-header nav.main-header-nav.show-nav ul#slide-out li a {

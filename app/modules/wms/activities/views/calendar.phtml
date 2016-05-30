@@ -3,5 +3,29 @@
 		<div class="col s12">
 			<h3>Activities Calendar</h3>
 		</div>
+		<div class="col s12">
+			<div id="events-calendar"></div>
+		</div>
+		<div class="col s12">
+			<h5>Upcoming Events</h5>
+			<div class="divider"></div>
+			<div class="row">
+
+			<?php for($i=1;$i<6;$i++): ?>
+				<div class="col s12">
+					<div class="card">
+						<div class="card-content">
+							<span class="card-title">Event <?php echo $i ?></span>
+							<p>Event Date and Time</p>
+							<p>Event description</p>
+						</div>
+					</div>
+				</div>
+			<?php endfor; ?>
+
+			</div>
+		</div>
 	</div>
 </div>
+
+<?php $this->loadJS('activities_fullCalendar-init') ?>

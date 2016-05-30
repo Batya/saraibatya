@@ -70,12 +70,12 @@ class SEVEN_THUNDERS extends Database
 	public function loadJS($module)
 	{
 		$module = explode("_",$module);
-		echo '<script src="'.URL.'app/modules/'.THEME.'/'.$module[0].'/js/'.$module[1].'.js"></script>';
+		echo '<script src="/app/modules/'.THEME.'/'.$module[0].'/js/'.$module[1].'.js"></script>';
 	}
 	public function loadCSS($module)
 	{
 		$module = explode("_",$module);
-		echo '<link href="'. URL.'app/modules/'.THEME.'/'.$module[0].'/css/'.$module[1].'.css" />';
+		echo '<link href="/app/modules/'.THEME.'/'.$module[0].'/css/'.$module[1].'.css" />';
 	}
 	
 	/**
