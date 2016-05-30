@@ -7,40 +7,102 @@ body {
 main {
 	&#main-body-container {
 		flex: 1 0 auto;
+
+		#body-content{
+
+		}
 	}
 }
 
+.main-header {
+	
+	#header-banner {
+		height: 200px;
+		background-color: $white-gray;
 
-nav {
-	&.main-header-nav {
-		position: fixed;
-		padding: 0 20px;
-		background-color: transparent;
-		box-shadow: none;
-		z-index: 1000;
-		@include transition(background-color 300ms ease-in-out);
-
-		&.show-nav {
-			background-color: $lightblue;
-
-			a {
-				color: $white;
-			}
+		#wms-title {
+			text-align: right;
+			line-height: 1.6em;
+			vertical-align: middle;
 		}
+	}
 
-		ul {
+	nav {
+		&.main-header-nav {
+			/*position: fixed;*/
+			padding: 0 20px;
+			background-color: $white-gray;
+			box-shadow: none;
+			z-index: 1000;
+			border-top: 1px solid $lightestgray;
+			@include transition(background-color 300ms ease-in-out);
 
-			li {
-
-				a {
-					font-weight: 700;
-					color: $lightgray;
+			.container {
+				.brand-logo {
+					padding-top:10px;
 				}
 			}
+
+			ul {
+
+				&.right {
+					margin-right: -15px;
+				}
+
+				li {
+
+					a {
+						font-weight: 700;
+						color: $gray;
+					}
+				}
+			}
+
+			&.show-nav {
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				background-color: $lightblue;
+
+				ul {
+
+					li {
+
+						a {
+							color: $white;
+						}
+					}
+
+					&#activities-dropdown {
+						li {
+							a {
+								color: $lightblue;
+							}
+						}
+					}
+
+					&#slide-out {
+						li {
+
+							a {
+								color: $gray;
+							}
+						}
+					}
+				}
+
+				#left-nav-toggle {
+					color: $white;
+				}
+			}
+
+			#left-nav-toggle {
+				color: $lightgray;
+			}
 		}
 	}
 }
-
 
 .container {
 	&.section-200 {
@@ -59,3 +121,15 @@ nav {
 		height: 600px;
 	}
 }
+
+
+.slider {
+	.indicators {
+		.indicator-item {
+			&.active {
+			    background-color: $purple;
+			}
+		}
+	}
+}
+

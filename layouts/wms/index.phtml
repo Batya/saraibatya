@@ -5,7 +5,7 @@
         <?php $this->__require(LAYOUTS.THEME.DS,'index/scripts.html') ?>
         <main id="main-body-container" class="content">
             <?php $this->__require(LAYOUTS.THEME.DS,'index/header.phtml') ?>
-            <div><?php require $this->getViewHtml($this->layout) ?></div>
+            <div id="body-content"><?php require $this->getViewHtml($this->layout) ?></div>
         </main>
         <?php $this->__require(LAYOUTS.THEME.DS,'index/footer.phtml') ?>
     </body>

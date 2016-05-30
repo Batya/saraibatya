@@ -3,7 +3,7 @@
 /**
  * About Us Model
  */
-class About_Model extends SEVEN_THUNDERS
+class Introduction_Model extends SEVEN_THUNDERS
 {
 	public function __construct()
 	{
