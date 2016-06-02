@@ -9,15 +9,15 @@
 	</core>
 	<dblive>
 		<host>localhost</host>
-		<name>wmscogla</name>
+		<name>elohim_db</name>
 		<user>144kAdmin</user>
-		<pass></pass>
+		<pass>hesaidit1984</pass>
 	</dblive>
 	<dblocal>
 		<host>localhost</host>
-		<name>wmscogla</name>
+		<name>elohim_db</name>
 		<user>root</user>
-		<pass>root</pass>
+		<pass></pass>
 	</dblocal>
 	<route>
 		<wms>
