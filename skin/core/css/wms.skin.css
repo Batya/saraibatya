@@ -7,8 +7,10 @@ main#main-body-container {
   flex: 1 0 auto; }
 
 .main-header #header-banner {
-  height: 200px;
-  background-color: #F1F1F1; }
+  height: 400px;
+  background-color: #F1F1F1;
+  background: url(images/wmscogla_homepage.jpg) center/cover fixed no-repeat;
+  background-position-y: -350px; }
   .main-header #header-banner #wms-title {
     text-align: right;
     line-height: 1.6em;

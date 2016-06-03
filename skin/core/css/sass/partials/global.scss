@@ -17,8 +17,10 @@ main {
 .main-header {
 	
 	#header-banner {
-		height: 200px;
+		height: 400px;
 		background-color: $white-gray;
+		background: url(images/wmscogla_homepage.jpg) center/cover fixed no-repeat;
+		background-position-y: -350px;
 
 		#wms-title {
 			text-align: right;
